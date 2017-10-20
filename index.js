@@ -6,7 +6,7 @@
  * @param {number} words - Number of words to shorten text to.
  * @return {string} - Shortened text followed by ...
  */
-exports.shortenText = function(text, words) {
+const shortenText = (text, words) => {
   return `${text
     .split(' ')
     .slice(0, words)
@@ -20,7 +20,7 @@ exports.shortenText = function(text, words) {
  * @param {string} email -Email to be validated.
  * @return {boolean} - True if valid email or false if invalid.
  */
-exports.validateEmail = function(email) {
+const validateEmail = email => {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
 };
@@ -32,10 +32,15 @@ exports.validateEmail = function(email) {
  * @param {string} phone - Phone number to validate.
  * @return {boolean} - True if valid phone number or false if invalid.
  */
-exports.validatePhone = function(phone) {
+const validatePhone = phone => {
   var a = /^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/.test(
     phone
   );
-  console.log(a);
   return a;
+};
+
+module.exports = {
+  shortenText,
+  validateEmail,
+  validatePhone
 };
