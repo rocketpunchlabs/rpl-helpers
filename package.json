@@ -4,8 +4,20 @@
   "description": "Helper library for Rocketpunch Labs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocketpunchlabs/rpl-helpers.git"
+  },
+  "keywords": ["helpers", "rpl"],
+  "author": "John Albritton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocketpunchlabs/rpl-helpers/issues"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
 }

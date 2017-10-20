@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Shorten text to to a number of words followed by ...
  * 
