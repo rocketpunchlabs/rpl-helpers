@@ -5,17 +5,22 @@ A small library of useful functions.
 
 ## Installation
 
-  `npm install rpl-helpers`
+  `npm install rpl-helpers` </br>
+  or </br>
+  `yarn add rpl-helpers`
 
 ## Usage
 
     var helpers = require('rpl-helpers');
 
-    var validEmail = helpers.validateEmail("dave@test.com"); // Should equal true
+    var validEmail = helpers.validateEmail("dave@test.com"); 
+    // Should equal true
 
-    var validPhone = helpers.validatePhone("1232342333"); // Should equal true
+    var validPhone = helpers.validatePhone("1232342333"); 
+    // Should equal true
 
-    var shortenedText = helpers.shortenText("Bacon ipsum dolor amet turkey boudin shoulder biltong, ground round strip steak tail short loin spare ribs pork loin frankfurter.", 8); //should equal "Bacon ipsum dolor amet turkey boudin shoulder biltong,..."
+    var shortenedText = helpers.shortenText("Bacon ipsum dolor amet turkey boudin shoulder biltong, ground round strip steak tail short loin spare ribs pork loin frankfurter.", 8); 
+    //should equal "Bacon ipsum dolor amet turkey boudin shoulder biltong,..."
   
   
 
