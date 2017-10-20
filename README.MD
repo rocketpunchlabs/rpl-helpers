@@ -1,4 +1,4 @@
-Rocketpunch Labs Helper Library
+Rocketpunch Labs Helper Library [![Build Status](https://travis-ci.org/rocketpunchlabs/rpl-helpers.svg?branch=master)](https://travis-ci.org/rocketpunchlabs/rpl-helpers)
 =========
 
 A small library of useful functions.
